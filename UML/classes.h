@@ -1,4 +1,5 @@
 #pragma once
 class Player;
 class Field;
-class Game;
+class Gameplay;
+class GameState;

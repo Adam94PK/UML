@@ -1,1 +1,2 @@
-﻿LINK : fatal error LNK1104: cannot open file 'sfml-audio-d-2.dll'
+﻿  main.cpp
+  UML.vcxproj -> D:\game_dev\UML\x64\Debug\UML.exe

@@ -8,8 +8,9 @@
 
 int main()
 {
-	std::string names[2]={ "adan", "kuba" };
-	Game gra2(2, names);
+	std::string names[2]={ "Adam", "Kuba" };
+	Game gra(2, names);
+	gra.start();
 	system("PAUSE");
 	return 0;
 }

@@ -1,5 +1,5 @@
 #pragma once
-#include "classes.h"
+#include "LibsAndDeclarations.h"
 #include<iostream>
 
 class Player
@@ -13,6 +13,11 @@ class Player
 
 public:
 	Player(std::string name);
+	Player(const Player &player);
+	Player(const Player &&player);
 	~Player();
+	std::string getName();
+	void swap(Player &player);
+
 };
 
