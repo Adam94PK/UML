@@ -9,7 +9,7 @@ public:
 	GameState & operator=(const GameState&) = delete;
 	~GameState();
 	virtual bool init() = 0;
-	virtual bool update(float dt, sf::RenderWindow & window) = 0;
+	virtual bool update(float dt) = 0;
 	virtual bool draw(sf::RenderWindow & window) = 0;
 	virtual void relase() = 0;
 };

@@ -10,9 +10,10 @@ class Player
 	int flair;
 	int connections;
 	int ects;
-	bool isActive;
 public:
-	int filed;
+	enum class States { IDLE, ACTIVE, DICE_ROLL, MOVING };
+	States state;
+	int field;
 	Player(std::string name);
 	Player(const Player &player);
 	Player(const Player &&player);
@@ -20,9 +21,8 @@ public:
 	std::string getName();
 	void swap(Player &player);
 	bool init();
-	bool update(float dt, sf::RenderWindow & window);
+	bool update(float dt);
 	bool draw();
 	void relase();
 
 };
-

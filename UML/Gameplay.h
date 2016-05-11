@@ -7,9 +7,6 @@
 
 class Gameplay : public GameState
 {
-	static const int LEVEL_1_SIZE = 24;
-	static const int LEVEL_2_SIZE = 20;
-	static const int LEVEL_3_SIZE = 16;
 	std::vector<std::shared_ptr<Field>> level_1;
 	std::vector<std::shared_ptr<Field>> level_2;
 	std::vector<std::shared_ptr<Field>> level_3;
@@ -23,7 +20,10 @@ public:
 	~Gameplay();
 	void start();
 	bool init();
-	bool update(float dt, sf::RenderWindow & window);
+	bool update(float dt);
 	bool draw(sf::RenderWindow & window);
 	void relase();
+	static const int LEVEL_1_SIZE = 24;
+	static const int LEVEL_2_SIZE = 20;
+	static const int LEVEL_3_SIZE = 16;
 };

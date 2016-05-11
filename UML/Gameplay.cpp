@@ -49,6 +49,8 @@ void Gameplay::start() {
 
 bool Gameplay::init()
 {
+	std::cout << "init" << std::endl;
+	players[0]->state = Player::States::ACTIVE;
 	active_player = 0;
 	if ( !game_board_texture.loadFromFile("game_board.jpg") )
 	{
@@ -59,10 +61,10 @@ bool Gameplay::init()
 	return true;
 }
 
-bool Gameplay::update(float dt, sf::RenderWindow & window)
+bool Gameplay::update(float dt)
 {	
 	for (auto player : players)
-		player->update(dt, window);
+		player->update(dt);
 	return true;
 }
 

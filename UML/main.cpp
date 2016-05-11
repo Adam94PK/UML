@@ -30,7 +30,7 @@ int main()
 		//UPDATE
 		{
 			float delta_time = clock.restart().asSeconds();
-			gameState->update(delta_time, window);
+			gameState->update(delta_time);
 		}
 		//DRAW
 		{
