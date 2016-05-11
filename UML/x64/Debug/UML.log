@@ -1,1 +1,3 @@
-﻿  UML.vcxproj -> D:\game_dev\UML\x64\Debug\UML.exe
+﻿  Player.cpp
+d:\game_dev\uml\uml\player.cpp(57): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  UML.vcxproj -> D:\game_dev\UML\x64\Debug\UML.exe

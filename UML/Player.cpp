@@ -64,7 +64,7 @@ bool Player::update(float dt)
 			{
 				field -= movment;
 				if (field < 0) {
-					field = Gameplay::LEVEL_1_SIZE + field;
+					field = Gameplay::LEVEL_1_SIZE -1 + field;
 				}
 				
 			}
@@ -75,7 +75,8 @@ bool Player::update(float dt)
 					field -= Gameplay::LEVEL_1_SIZE;
 			}
 			std::cout << "teraz stoje na " << field << std::endl;
-			state = States::MOVING;
+			//state = States::MOVING;
+			state = States::ACTIVE;
 		}
 	}
 	
