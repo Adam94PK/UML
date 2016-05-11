@@ -16,13 +16,14 @@ class Gameplay : public GameState
 	std::vector<std::shared_ptr<Player>> players;
 	sf::Texture game_board_texture;
 	sf::Sprite game_board_spirte;
+	int active_player;
 public:
 	Gameplay(int a);
 	Gameplay(int players_count, std::string *names);
 	~Gameplay();
 	void start();
 	bool init();
-	bool update(float dt);
-	void draw(sf::RenderWindow & window);
+	bool update(float dt, sf::RenderWindow & window);
+	bool draw(sf::RenderWindow & window);
 	void relase();
 };

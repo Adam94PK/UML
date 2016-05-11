@@ -49,6 +49,7 @@ void Gameplay::start() {
 
 bool Gameplay::init()
 {
+	active_player = 0;
 	if ( !game_board_texture.loadFromFile("game_board.jpg") )
 	{
 		std::cout << "blad przy ladowaniu tekstury" << std::endl;
@@ -58,16 +59,19 @@ bool Gameplay::init()
 	return true;
 }
 
-bool Gameplay::update(float dt)
-{
-	return false;
+bool Gameplay::update(float dt, sf::RenderWindow & window)
+{	
+	for (auto player : players)
+		player->update(dt, window);
+	return true;
 }
 
-void Gameplay::draw(sf::RenderWindow & window)
+bool Gameplay::draw(sf::RenderWindow & window)
 {
 	window.clear(sf::Color::Blue);
-	window.setView(window.getDefaultView());
+	//window.setView(window.getDefaultView());
 	window.draw(game_board_spirte);
+	return true;
 }
 
 void Gameplay::relase()

@@ -3,7 +3,7 @@
 #include <algorithm>
 #include <string>
 
-Player::Player(std::string name) : name(name)
+Player::Player(std::string name) : name(name), isActive(false)
 {
 	std::cout << "Player konstruktor ";
 	std::cout << name; 
@@ -31,4 +31,12 @@ Player::Player(const Player && player) : name(player.name)
 void Player::swap(Player &player)
 {
 	this->name.swap(player.name);
+}
+
+bool Player::update(float dt, sf::RenderWindow & window)
+{
+	sf::Event event;
+	while()
+	//trzes koscia
+	return false;
 }
