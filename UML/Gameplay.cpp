@@ -51,6 +51,8 @@ bool Gameplay::init()
 {
 	std::cout << "init" << std::endl;
 	players[0]->state = Player::States::ACTIVE;
+	for (auto p : players)
+		p->init();
 	active_player = 0;
 	if ( !game_board_texture.loadFromFile("game_board.jpg") )
 	{
@@ -73,6 +75,8 @@ bool Gameplay::draw(sf::RenderWindow & window)
 	window.clear(sf::Color::Blue);
 	//window.setView(window.getDefaultView());
 	window.draw(game_board_spirte);
+	for (auto p : players)
+		p->draw(window);
 	return true;
 }
 

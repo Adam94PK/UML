@@ -23,7 +23,7 @@ public:
 	bool update(float dt);
 	bool draw(sf::RenderWindow & window);
 	void relase();
-	static const int LEVEL_1_SIZE = 24;
+	static const int LEVEL_1_SIZE = 36;
 	static const int LEVEL_2_SIZE = 20;
 	static const int LEVEL_3_SIZE = 16;
 };

@@ -1,3 +1,7 @@
 ﻿  Player.cpp
-d:\game_dev\uml\uml\player.cpp(57): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\game_dev\uml\uml\player.cpp(68): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\game_dev\uml\uml\player.cpp(94): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\game_dev\uml\uml\player.cpp(98): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\game_dev\uml\uml\player.cpp(104): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\game_dev\uml\uml\player.cpp(108): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
   UML.vcxproj -> D:\game_dev\UML\x64\Debug\UML.exe
