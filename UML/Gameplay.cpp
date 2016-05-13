@@ -50,7 +50,7 @@ void Gameplay::start() {
 bool Gameplay::init()
 {
 	std::cout << "init" << std::endl;
-	players[0]->state = Player::States::ACTIVE;
+	players[0]->setActive();
 	for (auto p : players)
 		p->init();
 	active_player = 0;

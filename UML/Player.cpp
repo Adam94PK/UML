@@ -5,8 +5,9 @@
 #include <stdlib.h>
 #include "Gameplay.h"
 
-Player::Player(std::string name) : name(name), state(States::IDLE), field(0)
+Player::Player(std::string name) : name(name), field(0)
 {
+	state = &state_idle;
 	std::cout << "Player konstruktor ";
 	std::cout << name; 
 }
@@ -48,7 +49,7 @@ bool Player::init()
 
 bool Player::update(float dt)
 {
-	if (state == States::ACTIVE)
+	/*if (state == States::ACTIVE)
 	{
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
 		{
@@ -108,32 +109,17 @@ bool Player::update(float dt)
 				target_position.x = (9 - field) * 80;
 				target_position.y = 800 - 40;
 			}
-			/*
-			if (field <= 8)
-			{
-				target_position.x = ((8 - field) * 80) + 40;
-				target_position.y = 800 - 40;
-			}
-			else if (field > 8 &&  field < 16) {
-				target_position.x = 40;
-				target_position.y = ((8 - (field*0.5)) * 80) - 40;
-			}
-			else if (field >= 16 && field < 24)
-			{
-				target_position.x = ((8 - field / 3) * 80) + 40;
-				target_position.y = 40;
-			}
-			else
-			{
-				target_position.x = 800 - 40;
-				target_position.y = ((8 - field / 4) * 80) + 40;
-			}*/
 			position = target_position;
 			//state = States::MOVING;
 			state = States::ACTIVE;
 		}
 	}
-	
+	*/
+
+	if ( PlayerFSM *new_state = state->execute(*this) )
+	{
+		state = new_state;
+	}
 	return true;
 }
 
@@ -142,4 +128,13 @@ bool Player::draw(sf::RenderWindow & window)
 	sprite.setPosition(position);
 	window.draw(sprite);
 	return true;
+}
+
+void Player::relase()
+{
+}
+
+void Player::setActive()
+{
+	state = &state_active;
 }

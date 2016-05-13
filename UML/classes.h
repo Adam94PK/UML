@@ -3,3 +3,8 @@ class Player;
 class Field;
 class Gameplay;
 class GameState;
+class PlayerFSM;
+class Idle;
+class Acitve;
+class Move;
+class DiceRoll;

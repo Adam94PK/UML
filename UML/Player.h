@@ -1,6 +1,9 @@
 #pragma once
 #include "LibsAndDeclarations.h"
 #include<iostream>
+#include "Active.h"
+#include "DiceRoll.h"
+#include "Idle.h"
 
 class Player
 {
@@ -12,12 +15,8 @@ class Player
 	int ects;
 	sf::Texture texture;
 	sf::Sprite sprite;
-	sf::Vector2f position;
-	sf::Vector2f target_position;
+
 public:
-	enum class States { IDLE, ACTIVE, DICE_ROLL, MOVING };
-	States state;
-	int field;
 	Player(std::string name);
 	Player(const Player &player);
 	Player(const Player &&player);
@@ -28,4 +27,12 @@ public:
 	bool update(float dt);
 	bool draw(sf::RenderWindow & window);
 	void relase();
+	void setActive();
+	int field;
+	PlayerFSM* state;
+	Idle state_idle;
+	Active state_active;
+	DiceRoll state_dice_roll;
+	sf::Vector2f position;
+	sf::Vector2f target_position;
 };

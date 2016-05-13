@@ -151,21 +151,29 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Active.h" />
     <ClInclude Include="classes.h" />
+    <ClInclude Include="DiceRoll.h" />
     <ClInclude Include="Field.h" />
     <ClInclude Include="Gameplay.h" />
     <ClInclude Include="GameState.h" />
+    <ClInclude Include="Idle.h" />
     <ClInclude Include="LibsAndDeclarations.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="PlayerFSM.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Active.cpp" />
+    <ClCompile Include="DiceRoll.cpp" />
     <ClCompile Include="Field.cpp" />
     <ClCompile Include="Gameplay.cpp" />
     <ClCompile Include="GameState.cpp" />
+    <ClCompile Include="Idle.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayerFSM.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
