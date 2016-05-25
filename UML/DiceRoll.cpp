@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "DiceRoll.h"
 #include "Player.h"
-#include "Gameplay.h"
+#include "GameLevelFactory.h"
 
 
 DiceRoll::DiceRoll()
@@ -38,15 +38,15 @@ PlayerFSM* DiceRoll::execute(Player & player)
 		{
 			player.field -= movment;
 			if (player.field < 0) {
-				player.field = Gameplay::LEVEL_1_SIZE - 1 + player.field;
+				player.field = GameLevelFactory::LEVEL_1_SIZE - 1 + player.field;
 			}
 
 		}
 		else
 		{
 			player.field += movment;
-			if (player.field > Gameplay::LEVEL_1_SIZE)
-				player.field -= Gameplay::LEVEL_1_SIZE -1;
+			if (player.field > GameLevelFactory::LEVEL_1_SIZE)
+				player.field -= GameLevelFactory::LEVEL_1_SIZE -1;
 		}
 		std::cout << "teraz stoje na " << player.field << std::endl;
 		//Target position

@@ -2,6 +2,7 @@
 #include "LibsAndDeclarations.h"
 #include "GameState.h"
 #include "Gameplay.h"
+#include "GameplayManager.h"	
 
 int main()
 {
@@ -11,7 +12,9 @@ int main()
 	sf::RenderWindow window(sf::VideoMode(game_width, game_height, 32), "PK-GAME", sf::Style::Titlebar | sf::Style::Close);
 	window.setVerticalSyncEnabled(true);
 	std::string names [2] = { "adam", "kuba" };
-	std::shared_ptr<GameState> gameState = std::make_shared<Gameplay>(2, names);
+	Gameplay *gameplay = GameplayManager::get();
+	gameplay->init(2, names);
+	GameState * gameState(gameplay);
 	gameState->init();
 	sf::Clock clock;
 

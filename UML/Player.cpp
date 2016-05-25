@@ -51,6 +51,8 @@ bool Player::update(float dt)
 {
 	if ( PlayerFSM *new_state = state->execute(*this) )
 	{
+		state->release();
+		new_state->init();
 		state = new_state;
 	}
 	return true;

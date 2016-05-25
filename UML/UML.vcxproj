@@ -155,7 +155,10 @@
     <ClInclude Include="classes.h" />
     <ClInclude Include="DiceRoll.h" />
     <ClInclude Include="Field.h" />
+    <ClInclude Include="GameLevel.h" />
+    <ClInclude Include="GameLevelFactory.h" />
     <ClInclude Include="Gameplay.h" />
+    <ClInclude Include="GameplayManager.h" />
     <ClInclude Include="GameState.h" />
     <ClInclude Include="Idle.h" />
     <ClInclude Include="LibsAndDeclarations.h" />
@@ -168,7 +171,10 @@
     <ClCompile Include="Active.cpp" />
     <ClCompile Include="DiceRoll.cpp" />
     <ClCompile Include="Field.cpp" />
+    <ClCompile Include="GameLevel.cpp" />
+    <ClCompile Include="GameLevelFactory.cpp" />
     <ClCompile Include="Gameplay.cpp" />
+    <ClCompile Include="GameplayManager.cpp" />
     <ClCompile Include="GameState.cpp" />
     <ClCompile Include="Idle.cpp" />
     <ClCompile Include="main.cpp" />

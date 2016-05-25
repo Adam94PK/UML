@@ -2,8 +2,11 @@
 #include "Gameplay.h"
 #include "Field.h"
 #include "Player.h"
-#include <memory>
-#include <string>
+#include "GameLevelFactory.h"
+
+Gameplay::Gameplay()
+{
+}
 
 Gameplay::Gameplay(int players_count, std::string *names)
 {
@@ -11,28 +14,8 @@ Gameplay::Gameplay(int players_count, std::string *names)
 	players.reserve(players_count);
 	for (int i = 0; i < players_count; i++)
 		players.push_back(std::make_shared<Player>(names[i]));
-
-	level_1.reserve(LEVEL_1_SIZE);
-	level_2.reserve(LEVEL_2_SIZE);
-	level_3.reserve(LEVEL_3_SIZE);
-
-	
-	for (int i = 0; i < LEVEL_1_SIZE; i++)
-		level_1.push_back(std::make_shared<Field>());
-	for (int i = 0; i < LEVEL_2_SIZE; i++)
-		level_1.push_back(std::make_shared<Field>());
-	for (int i = 0; i < LEVEL_3_SIZE; i++)
-		level_1.push_back(std::make_shared<Field>());
-
+	level_1 = GameLevelFactory::getLvl_1();
 }
-Gameplay::Gameplay(int a) {
-
-}
-
-Gameplay::~Gameplay()
-{
-}
-
 
 void Gameplay::start() {
 	std::cout << std::endl << "Game::start()" << std::endl;
@@ -60,6 +43,15 @@ bool Gameplay::init()
 		return false;
 	}
 	game_board_spirte.setTexture(game_board_texture);
+	return true;
+}
+
+bool Gameplay::init(int players_count, std::string * names)
+{
+	players.reserve(players_count);
+	for (int i = 0; i < players_count; i++)
+		players.push_back(std::make_shared<Player>(names[i]));
+	level_1 = GameLevelFactory::getLvl_1();
 	return true;
 }
 

@@ -16,6 +16,12 @@
     <Filter Include="Header Files\AdditionalHeaders">
       <UniqueIdentifier>{ae9a2f49-3b81-4c49-b401-242548ca73b8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\PlayerFSM">
+      <UniqueIdentifier>{0e6ed7d0-5d0c-463a-a9d6-52897fd3b235}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PlayerFSM">
+      <UniqueIdentifier>{15962582-fbf7-4adc-9316-6c54200818c5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -45,16 +51,25 @@
     <ClInclude Include="GameState.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Idle.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Active.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PlayerFSM.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\PlayerFSM</Filter>
     </ClInclude>
     <ClInclude Include="DiceRoll.h">
+      <Filter>Header Files\PlayerFSM</Filter>
+    </ClInclude>
+    <ClInclude Include="Idle.h">
+      <Filter>Header Files\PlayerFSM</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerFSM.h">
+      <Filter>Header Files\PlayerFSM</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLevel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLevelFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameplayManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -77,16 +92,25 @@
     <ClCompile Include="GameState.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Idle.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Active.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="PlayerFSM.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\PlayerFSM</Filter>
     </ClCompile>
     <ClCompile Include="DiceRoll.cpp">
+      <Filter>Source Files\PlayerFSM</Filter>
+    </ClCompile>
+    <ClCompile Include="Idle.cpp">
+      <Filter>Source Files\PlayerFSM</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerFSM.cpp">
+      <Filter>Source Files\PlayerFSM</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLevel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLevelFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameplayManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
