@@ -7,7 +7,7 @@
 
 Player::Player(std::string name) : name(name), field(0)
 {
-	state = &state_idle;
+	state = &available_states.idle;
 	std::cout << "Player konstruktor ";
 	std::cout << name; 
 }
@@ -38,12 +38,12 @@ void Player::swap(Player &player)
 
 bool Player::init()
 {
-	if (!texture.loadFromFile("player.jpg"))
+	if (!graphics.texture.loadFromFile("player.jpg"))
 	{
 		std::cout << "Nie udalo sie zaladowac textury" << std::endl;
 		return false;
 	}
-	sprite.setTexture(texture);
+	graphics.sprite.setTexture(graphics.texture);
 	return true;
 }
 
@@ -60,8 +60,8 @@ bool Player::update(float dt)
 
 bool Player::draw(sf::RenderWindow & window)
 {
-	sprite.setPosition(position);
-	window.draw(sprite);
+	graphics.sprite.setPosition(position);
+	window.draw(graphics.sprite);
 	return true;
 }
 
@@ -71,5 +71,5 @@ void Player::relase()
 
 void Player::setActive()
 {
-	state = &state_active;
+	state = &available_states.active;
 }

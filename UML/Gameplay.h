@@ -8,16 +8,14 @@
 
 class Gameplay : public GameState
 {
-	GameLevel level_1;
 	std::vector<std::shared_ptr<Player>> players;
 	sf::Texture game_board_texture;
 	sf::Sprite game_board_spirte;
 	int active_player;
-	GameLevel gameLvl;
+	GameLevel gameLvl1;
+	GameLevel gameLvl2;
+	GameLevel gameLvl3;
 public:
-	Gameplay();
-	Gameplay(int players_count, std::string *names);
-	void start();
 	bool init();
 	bool init(int players_count, std::string *names);
 	bool update(float dt);

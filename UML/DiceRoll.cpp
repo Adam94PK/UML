@@ -23,7 +23,6 @@ PlayerFSM* DiceRoll::execute(Player & player)
 	//...
 	//end
 	std::cout << "DiceRoll" << std::endl;
-
 	if (!sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
 	{
 		std::cout << "Ruch" << std::endl;
@@ -72,7 +71,7 @@ PlayerFSM* DiceRoll::execute(Player & player)
 			player.target_position.y = 800 - 40;
 		}
 		player.position = player.target_position;
-		return &player.state_active;
+		return &player.available_states.active;
 		//state = States::ACTIVE;
 	}
 	return nullptr;
