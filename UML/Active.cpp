@@ -20,7 +20,7 @@ PlayerFSM* Active::execute(Player & player)
 {
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
 	{
-		return &player.state_dice_roll;
+		return &player.available_states.dice_roll;
 	}
 	return nullptr;
 }

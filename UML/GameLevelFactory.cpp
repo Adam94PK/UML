@@ -8,20 +8,31 @@ GameLevel GameLevelFactory::getLvl_1()
 	gameLvl.fields.reserve(LEVEL_1_SIZE);
 	gameLvl.size = LEVEL_1_SIZE;
 	for (int i = 0; i < LEVEL_1_SIZE; i++)
-		gameLvl.fields.emplace_back(std::make_shared<Field>());
-
-	gameLvl.loadSprite("game_board.jpg");
+		gameLvl.fields.emplace_back(make_shared<Field>());
+	gameLvl.loadSprite("level1.png");
 	return move(gameLvl);
 }
 
 GameLevel GameLevelFactory::getLvl_2()
 {
-	// TODO: insert return statement here
-	return GameLevel();
+	GameLevel gameLvl;
+	gameLvl.fields.reserve(LEVEL_2_SIZE);
+	gameLvl.size = LEVEL_2_SIZE;
+	for (int i = 0; i < LEVEL_2_SIZE; i++)
+		gameLvl.fields.emplace_back(make_shared<Field>());
+	gameLvl.loadSprite("level2.png");
+	gameLvl.level_spirte.setPosition(80., 80.);
+	return move(gameLvl);
 }
 
 GameLevel GameLevelFactory::getLvl_3()
 {
-	// TODO: insert return statement here
-	return GameLevel();
+	GameLevel gameLvl;
+	gameLvl.fields.reserve(LEVEL_3_SIZE);
+	gameLvl.size = LEVEL_3_SIZE;
+	for (int i = 0; i < LEVEL_3_SIZE; i++)
+		gameLvl.fields.emplace_back(make_shared<Field>());
+	gameLvl.loadSprite("level3.png");
+	gameLvl.level_spirte.setPosition(160., 160.);
+	return move(gameLvl);
 }

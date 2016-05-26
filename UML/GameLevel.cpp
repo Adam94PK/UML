@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "GameLevel.h"
 
-bool GameLevel::init(vector<shared_ptr<Field>>& v, const string & file)
+/*bool GameLevel::init(vector<shared_ptr<Field>>& v, const string & file)
 {
 	size = v.size();
 	fields = move(v);
@@ -11,7 +11,7 @@ bool GameLevel::init(vector<shared_ptr<Field>>& v, const string & file)
 	}
 	level_spirte.setTexture(level_texture);
 	return false;
-}
+}*/
 
 bool GameLevel::loadSprite(const string & file)
 {
@@ -22,6 +22,17 @@ bool GameLevel::loadSprite(const string & file)
 	}
 	level_spirte.setTexture(level_texture);
 	return true;
+}
+
+GameLevel::GameLevel(GameLevel && source) : GameLevel()
+{
+	this->swap(source);
+}
+
+GameLevel & GameLevel::operator=(GameLevel source)
+{
+	this->swap(source);
+	return *this;
 }
 
 bool GameLevel::draw(sf::RenderWindow & window)
@@ -39,4 +50,19 @@ Field & GameLevel::operator[](int i)
 int GameLevel::getSize() const
 {
 	return size;
+}
+
+void GameLevel::swap(GameLevel & source)
+{
+	std::swap(fields, source.fields);
+	std::swap(level_texture, source.level_texture);
+	std::swap(level_spirte, source.level_spirte);
+	level_spirte.setTexture(level_texture);
+	source.level_spirte.setTexture(source.level_texture);
+	std::swap(size, source.size);
+}
+
+sf::Vector2f GameLevel::getSpritePosition()
+{
+	return level_spirte.getPosition();
 }

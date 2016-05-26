@@ -5,7 +5,7 @@ class Gameplay;
 class GameState;
 class PlayerFSM;
 class Idle;
-class Acitve;
+class Active;
 class Move;
 class DiceRoll;
 class GameLevel;
