@@ -66,3 +66,4 @@ sf::Vector2f GameLevel::getSpritePosition()
 {
 	return level_spirte.getPosition();
 }
+

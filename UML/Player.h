@@ -35,7 +35,6 @@ class Player
 		sf::Text connectoins;
 		sf::Text ects;
 	};
-
 	friend Active;
 	friend DiceRoll;
 	friend Idle;
@@ -58,6 +57,7 @@ class Player
 	void initStatisticsText();
 	void updateStatisticsText();
 	void drawStatistics(sf::RenderWindow & window);
+	//////////////////////////////////
 public:
 	Player(std::string name);
 	Player(const Player &player);
@@ -72,4 +72,5 @@ public:
 	void setActive();
 	const GameLevel * getActualLvl();
 	void setLvl(GameLevel & game_lvl);
+
 };

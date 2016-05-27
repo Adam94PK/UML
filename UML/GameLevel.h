@@ -23,5 +23,6 @@ public:
 	void swap(GameLevel & source);
 	sf::Texture level_texture;
 	sf::Vector2f getSpritePosition();
+
 };
 
