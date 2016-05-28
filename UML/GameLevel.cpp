@@ -47,6 +47,11 @@ Field & GameLevel::operator[](int i)
 		return *fields[i];
 }
 
+Field & GameLevel::getField(int i)
+{
+	return *fields[i];
+}
+
 int GameLevel::getSize() const
 {
 	return size;

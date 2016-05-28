@@ -23,7 +23,7 @@ bool Gameplay::init(int players_count, std::string * names)
 	gameLvl2 = GameLevelFactory::getLvl_2();
 	gameLvl3 = GameLevelFactory::getLvl_3();
 	for (auto & p : players)
-		p->setLvl(gameLvl2);
+		p->setLvl(gameLvl1);
 	return true;
 }
 
@@ -43,6 +43,8 @@ bool Gameplay::draw(sf::RenderWindow & window)
 	gameLvl3.draw(window);
 	for (auto p : players)
 		p->draw(window);
+	int actual_filed = players[active_player]->getActualField();
+	players[active_player]->getActualLvl()->getField(actual_filed).drawDescription(window);
 	return true;
 }
 

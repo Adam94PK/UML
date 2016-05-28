@@ -152,6 +152,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Active.h" />
+    <ClInclude Include="Beer.h" />
     <ClInclude Include="classes.h" />
     <ClInclude Include="DiceRoll.h" />
     <ClInclude Include="Field.h" />
@@ -169,6 +170,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Active.cpp" />
+    <ClCompile Include="Beer.cpp" />
     <ClCompile Include="DiceRoll.cpp" />
     <ClCompile Include="Field.cpp" />
     <ClCompile Include="GameLevel.cpp" />

@@ -1,6 +1,7 @@
 #pragma once
 class Player;
 class Field;
+class Beer;
 class Gameplay;
 class GameState;
 class PlayerFSM;

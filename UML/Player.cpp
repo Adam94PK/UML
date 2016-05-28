@@ -132,7 +132,7 @@ void Player::setActive()
 	state = &available_states.active;
 }
 
-const GameLevel * Player::getActualLvl()
+GameLevel * Player::getActualLvl()
 {
 	return actual_level;
 }
@@ -140,4 +140,9 @@ const GameLevel * Player::getActualLvl()
 void Player::setLvl(GameLevel & game_lvl)
 {
 	actual_level = &game_lvl;
+}
+
+int Player::getActualField()
+{
+	return field;
 }

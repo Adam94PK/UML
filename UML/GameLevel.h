@@ -19,6 +19,7 @@ public:
 	GameLevel & operator=(GameLevel source);
 	bool draw(sf::RenderWindow & window);
 	Field & operator[](int i);
+	Field & getField(int i);
 	int getSize() const;
 	void swap(GameLevel & source);
 	sf::Texture level_texture;

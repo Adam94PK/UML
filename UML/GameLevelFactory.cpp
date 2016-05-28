@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "GameLevelFactory.h"
 #include "GameLevel.h"
+#include "Beer.h"
 
 GameLevel GameLevelFactory::getLvl_1()
 {
@@ -8,7 +9,19 @@ GameLevel GameLevelFactory::getLvl_1()
 	gameLvl.fields.reserve(LEVEL_1_SIZE);
 	gameLvl.size = LEVEL_1_SIZE;
 	for (int i = 0; i < LEVEL_1_SIZE; i++)
-		gameLvl.fields.emplace_back(make_shared<Field>());
+	{
+		if (i == 2)
+		{
+			shared_ptr<Field> pointer(new Beer());
+			pointer->init();
+			gameLvl.fields.push_back(pointer);
+		}
+		else
+		{
+			gameLvl.fields.emplace_back(make_shared<Field>());
+			gameLvl.fields[i]->init();
+		}
+	}
 	gameLvl.loadSprite("level1.png");
 	return move(gameLvl);
 }

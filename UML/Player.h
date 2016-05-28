@@ -39,7 +39,7 @@ class Player
 	friend DiceRoll;
 	friend Idle;
 	friend PlayerFSM;
-
+	friend Beer;
 
 	////////////////////////////////////
 	std::string name;
@@ -70,7 +70,7 @@ public:
 	bool draw(sf::RenderWindow & window);
 	void relase();
 	void setActive();
-	const GameLevel * getActualLvl();
+	GameLevel * getActualLvl();
 	void setLvl(GameLevel & game_lvl);
-
+	int getActualField();
 };
