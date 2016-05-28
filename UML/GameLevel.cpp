@@ -47,9 +47,9 @@ Field & GameLevel::operator[](int i)
 		return *fields[i];
 }
 
-Field & GameLevel::getField(int i)
+shared_ptr<Field> GameLevel::getField(int i)
 {
-	return *fields[i];
+	return fields[i];
 }
 
 int GameLevel::getSize() const

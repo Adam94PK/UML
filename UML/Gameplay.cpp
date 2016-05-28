@@ -43,8 +43,9 @@ bool Gameplay::draw(sf::RenderWindow & window)
 	gameLvl3.draw(window);
 	for (auto p : players)
 		p->draw(window);
+	players[active_player]->drawStatistics(window);
 	int actual_filed = players[active_player]->getActualField();
-	players[active_player]->getActualLvl()->getField(actual_filed).drawDescription(window);
+	players[active_player]->getActualLvl()->getField(actual_filed)->drawDescription(window);
 	return true;
 }
 

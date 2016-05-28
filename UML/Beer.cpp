@@ -11,4 +11,5 @@ void Beer::perfomr(Player & player)
 {
 	player.stats.connections += 1;
 	player.stats.hangover += 1;
+	std::cout << player.stats.connections << std::endl;
 }
