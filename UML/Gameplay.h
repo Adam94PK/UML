@@ -12,6 +12,7 @@ class Gameplay : public GameState
 	sf::Texture game_board_texture;
 	sf::Sprite game_board_spirte;
 	int active_player;
+	int players_conut;
 	GameLevel gameLvl1;
 	GameLevel gameLvl2;
 	GameLevel gameLvl3;
@@ -21,4 +22,5 @@ public:
 	bool update(float dt);
 	bool draw(sf::RenderWindow & window);
 	void relase();
+	void setNextActive();
 };
