@@ -2,6 +2,7 @@
 class Player;
 class Field;
 class Beer;
+class WDP;
 class Gameplay;
 class GameState;
 class PlayerFSM;

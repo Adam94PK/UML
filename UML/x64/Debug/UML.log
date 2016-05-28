@@ -1,2 +1,8 @@
-﻿  Field.cpp
+﻿  Move.cpp
+d:\game_dev\uml\uml\move.cpp(17): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\game_dev\uml\uml\move.cpp(18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\game_dev\uml\uml\move.cpp(22): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\game_dev\uml\uml\move.cpp(28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\game_dev\uml\uml\move.cpp(32): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\game_dev\uml\uml\move.cpp(33): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
   UML.vcxproj -> D:\game_dev\UML\x64\Debug\UML.exe

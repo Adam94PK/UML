@@ -28,6 +28,12 @@
     <Filter Include="Source Files\Player">
       <UniqueIdentifier>{ddf47fce-542d-4b7e-bb85-789617473361}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Fields">
+      <UniqueIdentifier>{8f3680d6-820a-4834-9209-90c130c08c23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Fields">
+      <UniqueIdentifier>{c52e00f1-b63b-48c2-9a85-68e1aba73272}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -37,9 +43,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="targetver.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Field.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="classes.h">
@@ -78,15 +81,21 @@
     <ClInclude Include="Player.h">
       <Filter>Header Files\Player</Filter>
     </ClInclude>
+    <ClInclude Include="Field.h">
+      <Filter>Header Files\Fields</Filter>
+    </ClInclude>
     <ClInclude Include="Beer.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="WDP.h">
+      <Filter>Header Files\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Move.h">
+      <Filter>Header Files\PlayerFSM</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Field.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
@@ -122,8 +131,17 @@
     <ClCompile Include="Player.cpp">
       <Filter>Source Files\Player</Filter>
     </ClCompile>
+    <ClCompile Include="Field.cpp">
+      <Filter>Source Files\Fields</Filter>
+    </ClCompile>
     <ClCompile Include="Beer.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="Move.cpp">
+      <Filter>Source Files\PlayerFSM</Filter>
+    </ClCompile>
+    <ClCompile Include="WDP.cpp">
+      <Filter>Source Files\Fields</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
