@@ -12,6 +12,7 @@ void Field::init()
 	{
 		std::cout << "nie udalo sie zaladowac fonta" << std::endl;
 	}
+	descriptionText.setFont(font);
 	descriptionText.setCharacterSize(20);
 	descriptionText.setPosition(850.f, 200.f);
 	descriptionText.setColor(sf::Color::White);

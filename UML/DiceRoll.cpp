@@ -37,8 +37,8 @@ PlayerFSM* DiceRoll::execute(Player & player)
 		else
 		{
 			player.field += movment;
-			if (player.field > level->getSize())
-				player.field -= level->getSize() -1;
+			if (player.field >= level->getSize())
+				player.field -= level->getSize();
 		}
 		std::cout << "teraz stoje na " << player.field << std::endl;
 		//Target position

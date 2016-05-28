@@ -2,6 +2,7 @@
 #include "GameLevelFactory.h"
 #include "GameLevel.h"
 #include "Beer.h"
+#include "WDP.h"
 
 GameLevel GameLevelFactory::getLvl_1()
 {
@@ -13,6 +14,12 @@ GameLevel GameLevelFactory::getLvl_1()
 		if (i == 2)
 		{
 			shared_ptr<Field> pointer(new Beer());
+			pointer->init();
+			gameLvl.fields.push_back(pointer);
+		}
+		else if (i == 3)
+		{
+			shared_ptr<Field> pointer(new WDP());
 			pointer->init();
 			gameLvl.fields.push_back(pointer);
 		}
