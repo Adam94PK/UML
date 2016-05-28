@@ -155,6 +155,7 @@
     <ClInclude Include="Beer.h" />
     <ClInclude Include="classes.h" />
     <ClInclude Include="DiceRoll.h" />
+    <ClInclude Include="Exercise.h" />
     <ClInclude Include="Field.h" />
     <ClInclude Include="GameLevel.h" />
     <ClInclude Include="GameLevelFactory.h" />
@@ -174,6 +175,7 @@
     <ClCompile Include="Active.cpp" />
     <ClCompile Include="Beer.cpp" />
     <ClCompile Include="DiceRoll.cpp" />
+    <ClCompile Include="Exercise.cpp" />
     <ClCompile Include="Field.cpp" />
     <ClCompile Include="GameLevel.cpp" />
     <ClCompile Include="GameLevelFactory.cpp" />

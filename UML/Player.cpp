@@ -119,7 +119,7 @@ bool Player::draw(sf::RenderWindow & window)
 {
 	graphics.sprite.setPosition(position);
 	window.draw(graphics.sprite);
-	drawStatistics(window);
+	//drawStatistics(window);
 	return true;
 }
 

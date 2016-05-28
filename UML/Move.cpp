@@ -34,7 +34,7 @@ PlayerFSM * Move::execute(Player & player)
 	}
 	player.position = player.target_position + player.actual_level->getSpritePosition();
 	cout << "Target pos = : " << player.position.x << " " << player.position.y;
-	return &player.available_states.active;
+	return &player.available_states.exercise;
 }
 
 void Move::release()

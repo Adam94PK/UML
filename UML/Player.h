@@ -5,6 +5,7 @@
 #include "DiceRoll.h"
 #include "Idle.h"
 #include "Move.h"
+#include "Exercise.h"
 
 class Player
 {
@@ -28,6 +29,7 @@ class Player
 		Active active;
 		DiceRoll dice_roll;
 		Move move;
+		Exercise exercise;
 	};
 	struct text
 	{
@@ -41,6 +43,7 @@ class Player
 	friend DiceRoll;
 	friend Idle;
 	friend Move;
+	friend Exercise;
 	friend PlayerFSM;
 	friend Beer;
 
@@ -59,7 +62,6 @@ class Player
 	//////////////////////////////////
 	void initStatisticsText();
 	void updateStatisticsText();
-	void drawStatistics(sf::RenderWindow & window);
 	//////////////////////////////////
 public:
 	Player(std::string name);
@@ -71,6 +73,7 @@ public:
 	bool init();
 	bool update(float dt);
 	bool draw(sf::RenderWindow & window);
+	void drawStatistics(sf::RenderWindow & window);
 	void relase();
 	void setActive();
 	GameLevel * getActualLvl();

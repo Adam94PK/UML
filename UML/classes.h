@@ -10,6 +10,7 @@ class Idle;
 class Active;
 class Move;
 class DiceRoll;
+class Exercise;
 class GameLevel;
 class GameLevelFactory;
 class GameplayManager;
