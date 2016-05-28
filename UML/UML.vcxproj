@@ -163,6 +163,7 @@
     <ClInclude Include="GameState.h" />
     <ClInclude Include="Idle.h" />
     <ClInclude Include="LibsAndDeclarations.h" />
+    <ClInclude Include="Move.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="PlayerFSM.h" />
     <ClInclude Include="stdafx.h" />
@@ -181,6 +182,7 @@
     <ClCompile Include="GameState.cpp" />
     <ClCompile Include="Idle.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Move.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="PlayerFSM.cpp" />
     <ClCompile Include="stdafx.cpp">

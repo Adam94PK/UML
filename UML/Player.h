@@ -4,6 +4,7 @@
 #include "Active.h"
 #include "DiceRoll.h"
 #include "Idle.h"
+#include "Move.h"
 
 class Player
 {
@@ -26,6 +27,7 @@ class Player
 		Idle idle;
 		Active active;
 		DiceRoll dice_roll;
+		Move move;
 	};
 	struct text
 	{
@@ -38,6 +40,7 @@ class Player
 	friend Active;
 	friend DiceRoll;
 	friend Idle;
+	friend Move;
 	friend PlayerFSM;
 	friend Beer;
 

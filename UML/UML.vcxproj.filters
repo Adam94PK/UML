@@ -88,7 +88,10 @@
       <Filter>Header Files\Fields</Filter>
     </ClInclude>
     <ClInclude Include="WDP.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Move.h">
+      <Filter>Header Files\PlayerFSM</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -134,8 +137,11 @@
     <ClCompile Include="Beer.cpp">
       <Filter>Source Files\Fields</Filter>
     </ClCompile>
+    <ClCompile Include="Move.cpp">
+      <Filter>Source Files\PlayerFSM</Filter>
+    </ClCompile>
     <ClCompile Include="WDP.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Fields</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
