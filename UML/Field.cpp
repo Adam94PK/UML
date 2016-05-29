@@ -19,7 +19,7 @@ void Field::init()
 	setDescription();
 }
 
-void Field::perfomr(Player &player) {
+void Field::perform(Player &player) {
 
 }
 

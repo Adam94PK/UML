@@ -93,6 +93,12 @@
     <ClInclude Include="Move.h">
       <Filter>Header Files\PlayerFSM</Filter>
     </ClInclude>
+    <ClInclude Include="Exercise.h">
+      <Filter>Header Files\PlayerFSM</Filter>
+    </ClInclude>
+    <ClInclude Include="Zagadnienia.h">
+      <Filter>Header Files\Fields</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -143,6 +149,12 @@
     <ClCompile Include="WDP.cpp">
       <Filter>Source Files\Fields</Filter>
     </ClCompile>
+    <ClCompile Include="Exercise.cpp">
+      <Filter>Source Files\PlayerFSM</Filter>
+    </ClCompile>
+    <ClCompile Include="Zagadnienia.cpp">
+      <Filter>Source Files\Fields</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="game_board.png">
@@ -151,5 +163,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
 </Project>

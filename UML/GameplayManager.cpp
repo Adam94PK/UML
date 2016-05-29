@@ -11,4 +11,14 @@ Gameplay * GameplayManager::get()
 	return gameplay;
 }
 
+bool GameplayManager::release()
+{
+	if (gameplay == nullptr)
+	{
+		return false;
+	}
+	delete gameplay;
+	return true;
+}
+
 Gameplay * GameplayManager::gameplay = nullptr;

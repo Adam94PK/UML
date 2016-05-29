@@ -5,6 +5,7 @@
 #include "DiceRoll.h"
 #include "Idle.h"
 #include "Move.h"
+#include "Exercise.h"
 
 class Player
 {
@@ -28,9 +29,11 @@ class Player
 		Active active;
 		DiceRoll dice_roll;
 		Move move;
+		Exercise exercise;
 	};
 	struct text
 	{
+		sf::Text name;
 		sf::Text hangover;
 		sf::Text knowledge;
 		sf::Text flair;
@@ -43,6 +46,7 @@ class Player
 	friend Move;
 	friend PlayerFSM;
 	friend Beer;
+	friend Exercise;
 
 	////////////////////////////////////
 	std::string name;
@@ -59,7 +63,6 @@ class Player
 	//////////////////////////////////
 	void initStatisticsText();
 	void updateStatisticsText();
-	void drawStatistics(sf::RenderWindow & window);
 	//////////////////////////////////
 public:
 	Player(std::string name);
@@ -71,9 +74,15 @@ public:
 	bool init();
 	bool update(float dt);
 	bool draw(sf::RenderWindow & window);
+	void drawStatistics(sf::RenderWindow & window);
 	void relase();
 	void setActive();
 	GameLevel * getActualLvl();
 	void setLvl(GameLevel & game_lvl);
 	int getActualField();
+	bool addHangover(int pts);
+	bool addKnowledge(int pts);
+	bool addFlair(int pts);
+	bool addConnectoins(int pts);
+	bool addEcts(int pts);
 };

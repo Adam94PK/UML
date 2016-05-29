@@ -6,6 +6,6 @@ class Beer : public Field
 {
 	void setDescription();
 public:
-	void perfomr(Player &player);
+	void perform(Player &player);
 };
 

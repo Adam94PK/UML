@@ -9,36 +9,41 @@ void Player::initStatisticsText()
 {
 	if (!font.loadFromFile("resources/sansation.ttf"))
 		return;
-	sf::Vector2f posistion(850., 20.);
+	sf::Vector2f text_position(850., 20.);
 	sf::Vector2f to_next_position(0., 25.);
+
+	statisticsText.name.setFont(font);
+	statisticsText.name.setCharacterSize(25);
+	statisticsText.name.setPosition(text_position);
+	statisticsText.name.setColor(sf::Color::Red);
+
+	text_position += to_next_position;
 	statisticsText.connectoins.setFont(font);
 	statisticsText.connectoins.setCharacterSize(20);
-	statisticsText.connectoins.setPosition(posistion);
+	statisticsText.connectoins.setPosition(text_position);
 	statisticsText.connectoins.setColor(sf::Color::White);
 
 	statisticsText.ects.setFont(font);
 	statisticsText.ects.setCharacterSize(20);
-	posistion += to_next_position;
-	statisticsText.ects.setPosition(posistion);
+	text_position += to_next_position;
+	statisticsText.ects.setPosition(text_position);
 	
 	statisticsText.flair.setFont(font);
 	statisticsText.flair.setCharacterSize(20);
-	posistion += to_next_position;
-	statisticsText.flair.setPosition(posistion);
+	text_position += to_next_position;
+	statisticsText.flair.setPosition(text_position);
 	
 	statisticsText.hangover.setFont(font);
 	statisticsText.hangover.setCharacterSize(20);
-	posistion += to_next_position;
-	statisticsText.hangover.setPosition(posistion);
+	text_position += to_next_position;
+	statisticsText.hangover.setPosition(text_position);
 	
 	statisticsText.knowledge.setFont(font);
 	statisticsText.knowledge.setCharacterSize(20);
-	posistion += to_next_position;
-	statisticsText.knowledge.setPosition(posistion);
-}
+	text_position += to_next_position;
+	statisticsText.knowledge.setPosition(text_position);
 
-void Player::updateStatisticsText()
-{
+	statisticsText.name.setString(name);
 	statisticsText.connectoins.setString("Connections: " + to_string(stats.connections));
 	statisticsText.ects.setString("ECTSL: " + to_string(stats.ects));
 	statisticsText.flair.setString("Flair: " + to_string(stats.flair));
@@ -46,8 +51,14 @@ void Player::updateStatisticsText()
 	statisticsText.knowledge.setString("Knowladge: " + to_string(stats.knowledge));
 }
 
+void Player::updateStatisticsText()
+{
+	
+}
+
 void Player::drawStatistics(sf::RenderWindow & window)
 {
+	window.draw(statisticsText.name);
 	window.draw(statisticsText.connectoins);
 	window.draw(statisticsText.ects);
 	window.draw(statisticsText.flair);
@@ -86,6 +97,7 @@ Player::Player(const Player && player) : name(player.name)
 {
 	std::cout << "Konstruktor przenoszenia";
 }
+
 void Player::swap(Player &player)
 {
 	this->name.swap(player.name);
@@ -111,7 +123,7 @@ bool Player::update(float dt)
 		new_state->init();
 		state = new_state;
 	}
-	updateStatisticsText();
+	//updateStatisticsText();
 	return true;
 }
 
@@ -119,7 +131,7 @@ bool Player::draw(sf::RenderWindow & window)
 {
 	graphics.sprite.setPosition(position);
 	window.draw(graphics.sprite);
-	drawStatistics(window);
+	//drawStatistics(window);
 	return true;
 }
 
@@ -145,4 +157,39 @@ void Player::setLvl(GameLevel & game_lvl)
 int Player::getActualField()
 {
 	return field;
+}
+
+bool Player::addHangover(int pts)
+{
+	stats.hangover += pts;
+	statisticsText.hangover.setString("Hangover: " + to_string(stats.hangover));
+	return true;
+}
+
+bool Player::addKnowledge(int pts)
+{
+	stats.knowledge += pts;
+	statisticsText.knowledge.setString("Knowladge: " + to_string(stats.knowledge));
+	return true;
+}
+
+bool Player::addFlair(int pts)
+{
+	stats.flair += pts;
+	statisticsText.flair.setString("Flair: " + to_string(stats.flair));
+	return true;
+}
+
+bool Player::addConnectoins(int pts)
+{
+	stats.connections += pts;
+	statisticsText.connectoins.setString("Connections: " + to_string(stats.connections));
+	return true;
+}
+
+bool Player::addEcts(int pts)
+{
+	stats.ects += pts;
+	statisticsText.ects.setString("ECTSL: " + to_string(stats.ects));
+	return true;
 }

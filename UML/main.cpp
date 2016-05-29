@@ -42,6 +42,6 @@ int main()
 		}
 
 	}
-
+	GameplayManager::release();
 	return 0;
 }
