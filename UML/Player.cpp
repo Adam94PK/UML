@@ -193,3 +193,9 @@ bool Player::addEcts(int pts)
 	statisticsText.ects.setString("ECTSL: " + to_string(stats.ects));
 	return true;
 }
+
+bool Player::setLevel(GameLevel * gameLvl)
+{
+	actual_level = gameLvl;
+	return true;
+}

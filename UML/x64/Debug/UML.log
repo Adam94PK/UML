@@ -1,6 +1,39 @@
-﻿  PEiTC_egz.cpp
+﻿  stdafx.cpp
+  Zagadnienia.cpp
+  WF.cpp
+  Weekend.cpp
+  WDP.cpp
+  ToSecondLvl.cpp
+  SSPK.cpp
+  PlayerFSM.cpp
+  Player.cpp
+  PEiTC_lab.cpp
+  PEiTC_egz.cpp
+  Move.cpp
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\move.cpp(17): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\move.cpp(18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\move.cpp(22): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\move.cpp(28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\move.cpp(32): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\move.cpp(33): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Metodyka.cpp
+  main.cpp
+  Idle.cpp
+  GameState.cpp
+  GameplayManager.cpp
+  Gameplay.cpp
   GameLevelFactory.cpp
+  GameLevel.cpp
+  Field.cpp
+  Generating Code...
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\gamelevel.cpp(48): warning C4715: 'GameLevel::operator[]': not all control paths return a value
+  Compiling...
+  Exercise.cpp
   Elektro_lab.cpp
   Elektro_egz.cpp
+  DiceRoll.cpp
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\diceroll.cpp(22): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Beer.cpp
+  Active.cpp
   Generating Code...
   UML.vcxproj -> D:\POLITECHNIKA!\nauka\semestr 6\UML\GIT\uml.git\x64\Debug\UML.exe

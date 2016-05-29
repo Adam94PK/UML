@@ -61,6 +61,12 @@ GameLevel GameLevelFactory::getLvl_1()
 		{
 			makeField(new Elektro_egz(), gameLvl);
 		}
+		else if (i == 18)
+		{
+			shared_ptr<Field> pointer(new ToSecondLvl());
+			pointer->init();
+			gameLvl.fields.push_back(pointer);
+		}
 		else
 		{
 			gameLvl.fields.emplace_back(make_shared<Field>());
