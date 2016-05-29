@@ -136,14 +136,14 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>D:\SFML-2.3.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\programy\SFML\SFML-2.3.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>D:\SFML-2.3.2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\programy\SFML\SFML-2.3.2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>sfml-audio.lib;sfml-graphics.lib;sfml-system.lib;sfml-window.lib;sfml-main.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -157,6 +157,7 @@
     <ClInclude Include="DiceRoll.h" />
     <ClInclude Include="Exercise.h" />
     <ClInclude Include="Field.h" />
+    <ClInclude Include="FieldsHeaders.h" />
     <ClInclude Include="GameLevel.h" />
     <ClInclude Include="GameLevelFactory.h" />
     <ClInclude Include="Gameplay.h" />
@@ -164,13 +165,17 @@
     <ClInclude Include="GameState.h" />
     <ClInclude Include="Idle.h" />
     <ClInclude Include="LibsAndDeclarations.h" />
+    <ClInclude Include="Metodyka.h" />
     <ClInclude Include="Move.h" />
+    <ClInclude Include="PEiTC_lab.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="PlayerFSM.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="ToSecondLvl.h" />
     <ClInclude Include="WDP.h" />
+    <ClInclude Include="Weekend.h" />
+    <ClInclude Include="WF.h" />
     <ClInclude Include="Zagadnienia.h" />
   </ItemGroup>
   <ItemGroup>
@@ -186,7 +191,9 @@
     <ClCompile Include="GameState.cpp" />
     <ClCompile Include="Idle.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Metodyka.cpp" />
     <ClCompile Include="Move.cpp" />
+    <ClCompile Include="PEiTC_lab.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="PlayerFSM.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -197,6 +204,8 @@
     </ClCompile>
     <ClCompile Include="ToSecondLvl.cpp" />
     <ClCompile Include="WDP.cpp" />
+    <ClCompile Include="Weekend.cpp" />
+    <ClCompile Include="WF.cpp" />
     <ClCompile Include="Zagadnienia.cpp" />
   </ItemGroup>
   <ItemGroup>

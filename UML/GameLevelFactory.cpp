@@ -1,10 +1,7 @@
 #include "stdafx.h"
 #include "GameLevelFactory.h"
 #include "GameLevel.h"
-#include "Beer.h"
-#include "WDP.h"
-#include "Zagadnienia.h"
-#include "ToSecondLvl.h"
+#include "FieldsHeaders.h"
 
 GameLevel GameLevelFactory::getLvl_1()
 {
@@ -28,6 +25,30 @@ GameLevel GameLevelFactory::getLvl_1()
 		else if (i == 6)
 		{
 			shared_ptr<Field> pointer(new Zagadnienia());
+			pointer->init();
+			gameLvl.fields.push_back(pointer);
+		}
+		else if (i == 7)
+		{
+			shared_ptr<Field> pointer(new Metodyka());
+			pointer->init();
+			gameLvl.fields.push_back(pointer);
+		}
+		else if (i == 8)
+		{
+			shared_ptr<Field> pointer(new Weekend());
+			pointer->init();
+			gameLvl.fields.push_back(pointer);
+		}
+		else if (i == 9)
+		{
+			shared_ptr<Field> pointer(new WF());
+			pointer->init();
+			gameLvl.fields.push_back(pointer);
+		}
+		else if (i == 10)
+		{
+			shared_ptr<Field> pointer(new PEiTC_lab());
 			pointer->init();
 			gameLvl.fields.push_back(pointer);
 		}

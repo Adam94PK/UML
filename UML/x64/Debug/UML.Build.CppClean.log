@@ -1,9 +1,44 @@
-d:\game_dev\uml\uml\x64\debug\uml.pch
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\x64\debug\uml.pch
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\x64\debug\vc140.pdb
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\x64\debug\vc140.idb
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\x64\debug\stdafx.obj
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\x64\debug\active.obj
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\x64\debug\beer.obj
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\x64\debug\diceroll.obj
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\x64\debug\exercise.obj
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\x64\debug\field.obj
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\x64\debug\gamelevel.obj
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\x64\debug\gamelevelfactory.obj
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\x64\debug\gameplay.obj
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\x64\debug\gameplaymanager.obj
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\x64\debug\gamestate.obj
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\x64\debug\idle.obj
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\x64\debug\main.obj
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\x64\debug\move.obj
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\x64\debug\player.obj
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\x64\debug\playerfsm.obj
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\x64\debug\wdp.obj
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\x64\debug\zagadnienia.obj
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\x64\debug\metodyka.obj
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\x64\debug\peitc_lab.obj
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\x64\debug\weekend.obj
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\x64\debug\wf.obj
 d:\game_dev\uml\uml\x64\debug\vc140.pdb
-d:\game_dev\uml\uml\x64\debug\vc140.idb
-d:\game_dev\uml\uml\x64\debug\stdafx.obj
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\x64\debug\uml.ilk
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\x64\debug\uml.exe
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\x64\debug\uml.pdb
 d:\game_dev\uml\uml\x64\debug\active.obj
+d:\game_dev\uml\uml\x64\debug\active_backup_8228.obj
+d:\game_dev\uml\uml\x64\debug\active_backup_9020.obj
+d:\game_dev\uml\uml\x64\debug\active_base_8228.obj
+d:\game_dev\uml\uml\x64\debug\active_base_9020.obj
+d:\game_dev\uml\uml\x64\debug\active_local_8228.obj
+d:\game_dev\uml\uml\x64\debug\active_local_9020.obj
+d:\game_dev\uml\uml\x64\debug\active_remote_8228.obj
+d:\game_dev\uml\uml\x64\debug\active_remote_9020.obj
+d:\game_dev\uml\uml\x64\debug\beer.obj
 d:\game_dev\uml\uml\x64\debug\diceroll.obj
+d:\game_dev\uml\uml\x64\debug\exercise.obj
 d:\game_dev\uml\uml\x64\debug\field.obj
 d:\game_dev\uml\uml\x64\debug\gamelevel.obj
 d:\game_dev\uml\uml\x64\debug\gamelevelfactory.obj
@@ -12,11 +47,21 @@ d:\game_dev\uml\uml\x64\debug\gameplaymanager.obj
 d:\game_dev\uml\uml\x64\debug\gamestate.obj
 d:\game_dev\uml\uml\x64\debug\idle.obj
 d:\game_dev\uml\uml\x64\debug\main.obj
+d:\game_dev\uml\uml\x64\debug\metodyka.obj
+d:\game_dev\uml\uml\x64\debug\move.obj
+d:\game_dev\uml\uml\x64\debug\peitc_lab.obj
 d:\game_dev\uml\uml\x64\debug\player.obj
 d:\game_dev\uml\uml\x64\debug\playerfsm.obj
-d:\game_dev\uml\x64\debug\uml.ilk
-d:\game_dev\uml\x64\debug\uml.exe
+d:\game_dev\uml\uml\x64\debug\stdafx.obj
+d:\game_dev\uml\uml\x64\debug\tosecondlvl.obj
+d:\game_dev\uml\uml\x64\debug\wdp.obj
+d:\game_dev\uml\uml\x64\debug\weekend.obj
+d:\game_dev\uml\uml\x64\debug\wf.obj
+d:\game_dev\uml\uml\x64\debug\zagadnienia.obj
+d:\game_dev\uml\uml\x64\debug\vc140.idb
 d:\game_dev\uml\x64\debug\uml.pdb
+d:\game_dev\uml\x64\debug\uml.exe
+d:\game_dev\uml\x64\debug\uml.ilk
 d:\game_dev\uml\uml\x64\debug\uml.tlog\cl.command.1.tlog
 d:\game_dev\uml\uml\x64\debug\uml.tlog\cl.read.1.tlog
 d:\game_dev\uml\uml\x64\debug\uml.tlog\cl.write.1.tlog
