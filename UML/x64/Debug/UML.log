@@ -1,1 +1,5 @@
-﻿  UML.vcxproj -> D:\POLITECHNIKA!\nauka\semestr 6\UML\GIT\uml.git\x64\Debug\UML.exe
+﻿  DiceRoll.cpp
+d:\game_dev\uml\uml\diceroll.cpp(22): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Analiza.cpp
+  Generating Code...
+  UML.vcxproj -> D:\game_dev\UML\x64\Debug\UML.exe

@@ -11,3 +11,5 @@
 #include "Elektro_lab.h"
 #include "Elektro_egz.h"
 #include "ToSecondLvl.h"
+#include "KNIT.h"
+#include "Analiza.h"

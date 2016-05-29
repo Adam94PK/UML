@@ -152,6 +152,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Active.h" />
+    <ClInclude Include="Analiza.h" />
     <ClInclude Include="Beer.h" />
     <ClInclude Include="classes.h" />
     <ClInclude Include="DiceRoll.h" />
@@ -166,6 +167,7 @@
     <ClInclude Include="GameplayManager.h" />
     <ClInclude Include="GameState.h" />
     <ClInclude Include="Idle.h" />
+    <ClInclude Include="KNIT.h" />
     <ClInclude Include="LibsAndDeclarations.h" />
     <ClInclude Include="Metodyka.h" />
     <ClInclude Include="Move.h" />
@@ -184,6 +186,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Active.cpp" />
+    <ClCompile Include="Analiza.cpp" />
     <ClCompile Include="Beer.cpp" />
     <ClCompile Include="DiceRoll.cpp" />
     <ClCompile Include="Elektro_egz.cpp" />
@@ -196,6 +199,7 @@
     <ClCompile Include="GameplayManager.cpp" />
     <ClCompile Include="GameState.cpp" />
     <ClCompile Include="Idle.cpp" />
+    <ClCompile Include="KNIT.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Metodyka.cpp" />
     <ClCompile Include="Move.cpp" />

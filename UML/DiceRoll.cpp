@@ -30,7 +30,7 @@ PlayerFSM* DiceRoll::execute(Player & player)
 		{
 			player.field -= movment;
 			if (player.field < 0) {
-				player.field = level->getSize() - 1 + player.field;
+				player.field = level->getSize() + player.field;
 			}
 
 		}
