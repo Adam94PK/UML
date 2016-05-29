@@ -1,9 +1,16 @@
+<<<<<<< HEAD
 ﻿  Gameplay.cpp
   Generating Code...
   Compiling...
   Zagadnienia.cpp
   WDP.cpp
   Player.cpp
+=======
+﻿  Player.cpp
+  Gameplay.cpp
+  Generating Code...
+  Compiling...
+>>>>>>> 89de496d9eb7ca140319048ba36484c7bac8bd90
   Move.cpp
 d:\game_dev\uml\uml\move.cpp(17): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
 d:\game_dev\uml\uml\move.cpp(18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
@@ -14,7 +21,16 @@ d:\game_dev\uml\uml\move.cpp(33): warning C4244: '=': conversion from 'int' to '
   Exercise.cpp
   DiceRoll.cpp
 d:\game_dev\uml\uml\diceroll.cpp(22): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+<<<<<<< HEAD
   Beer.cpp
   Active.cpp
   Generating Code...
+=======
+  Active.cpp
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  Zagadnienia.cpp
+  WDP.cpp
+  Beer.cpp
+>>>>>>> 89de496d9eb7ca140319048ba36484c7bac8bd90
   UML.vcxproj -> D:\game_dev\UML\x64\Debug\UML.exe
