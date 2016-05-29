@@ -97,6 +97,7 @@ Player::Player(const Player && player) : name(player.name)
 {
 	std::cout << "Konstruktor przenoszenia";
 }
+
 void Player::swap(Player &player)
 {
 	this->name.swap(player.name);

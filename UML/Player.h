@@ -44,9 +44,9 @@ class Player
 	friend DiceRoll;
 	friend Idle;
 	friend Move;
-	friend Exercise;
 	friend PlayerFSM;
 	friend Beer;
+	friend Exercise;
 
 	////////////////////////////////////
 	std::string name;

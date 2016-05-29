@@ -16,7 +16,7 @@ bool Gameplay::init()
 
 bool Gameplay::init(int players_count, std::string * names)
 {
-	this->players_conut = players_count;
+	players_conut = players_count;
 	players.reserve(players_count);
 	for (int i = 0; i < players_count; i++)
 		players.emplace_back(make_shared<Player>(names[i]));
