@@ -1,7 +1,70 @@
-﻿  ToSecondLvl.cpp
-  Generating code
-  4 of 477 functions ( 0.8%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    8 functions had inline decision re-evaluated but remain unchanged
-  Finished generating code
-  UML.vcxproj -> D:\game_dev\UML\x64\Release\UML.exe
+﻿  Active.cpp
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C2143: syntax error: missing ',' before '&'
+  Beer.cpp
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C2143: syntax error: missing ',' before '&'
+  DiceRoll.cpp
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C2143: syntax error: missing ',' before '&'
+DiceRoll.cpp(22): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Elektro_egz.cpp
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C2143: syntax error: missing ',' before '&'
+  Elektro_lab.cpp
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C2143: syntax error: missing ',' before '&'
+  Exercise.cpp
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C2143: syntax error: missing ',' before '&'
+  Gameplay.cpp
+  Metodyka.cpp
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C2143: syntax error: missing ',' before '&'
+  Move.cpp
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C2143: syntax error: missing ',' before '&'
+Move.cpp(17): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Move.cpp(18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Move.cpp(22): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Move.cpp(28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Move.cpp(32): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Move.cpp(33): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  PEiTC_egz.cpp
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C2143: syntax error: missing ',' before '&'
+  PEiTC_lab.cpp
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C2143: syntax error: missing ',' before '&'
+  Player.cpp
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C2143: syntax error: missing ',' before '&'
+Player.cpp(116): error C2511: 'bool Player::init(const std::string &)': overloaded member function not found in 'Player'
+  d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(11): note: see declaration of 'Player'
+Player.cpp(117): error C2228: left of '.texture' must have class/struct/union
+Player.cpp(117): error C2228: left of '.loadFromFile' must have class/struct/union
+Player.cpp(122): error C2228: left of '.sprite' must have class/struct/union
+Player.cpp(122): error C2228: left of '.setTexture' must have class/struct/union
+Player.cpp(122): error C2228: left of '.texture' must have class/struct/union
+Player.cpp(123): error C2352: 'Player::initStatisticsText': illegal call of non-static member function
+  Player.cpp(8): note: see declaration of 'Player::initStatisticsText'
+Player.cpp(124): error C2228: left of '.x' must have class/struct/union
+Player.cpp(125): error C2228: left of '.y' must have class/struct/union
+  SSPK.cpp
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C2143: syntax error: missing ',' before '&'
+  ToSecondLvl.cpp
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C2143: syntax error: missing ',' before '&'
+  WDP.cpp
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C2143: syntax error: missing ',' before '&'
+  WF.cpp
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C2143: syntax error: missing ',' before '&'
+  Weekend.cpp
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C2143: syntax error: missing ',' before '&'
+  Zagadnienia.cpp
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+d:\politechnika!\nauka\semestr 6\uml\git\uml.git\uml\Player.h(74): error C2143: syntax error: missing ',' before '&'

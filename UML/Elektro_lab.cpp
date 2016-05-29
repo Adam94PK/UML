@@ -4,7 +4,7 @@
 
 void Elektro_lab::setDescription()
 {
-	descriptionText.setString("Przychodzisz z gotowcami. Jestes taki sprytny jak ostatnie 7 rocznikow!");
+	descriptionText.setString("Przychodzisz z gotowcami.\nJestes taki sprytny jak ostatnie 7 rocznikow!");
 }
 
 void Elektro_lab::perform(Player & player)

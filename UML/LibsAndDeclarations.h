@@ -7,3 +7,4 @@
 #include <SFML\Graphics.hpp>
 #include <SFML\Audio.hpp>
 #include "classes.h"
+#include <string.h>

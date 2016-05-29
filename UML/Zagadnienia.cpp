@@ -4,7 +4,7 @@
 
 void Zagadnienia::setDescription()
 {
-	descriptionText.setString("Prawie zaspales na egzamin z Zagadnien zawodowych w informatyce.\nTen dziwnie brzmiacy przedmiot to tak naprawde podstawy informatyki\n aby zdac rzuc koscia");
+	descriptionText.setString("Prawie zaspales na kolosa z Zagadnien spolecznych\ni zawodowych informatyki. Ten dziwnie\n brzmiacy przedmiot to tak naprawde\npodstawy informatyki.");
 }
 
 void Zagadnienia::perform(Player & player)

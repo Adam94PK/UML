@@ -1,67 +1,179 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="Active.cpp" />
-    <ClCompile Include="Beer.cpp" />
-    <ClCompile Include="DiceRoll.cpp" />
-    <ClCompile Include="Exercise.cpp" />
-    <ClCompile Include="Field.cpp" />
-    <ClCompile Include="GameLevel.cpp" />
-    <ClCompile Include="GameLevelFactory.cpp" />
-    <ClCompile Include="Gameplay.cpp" />
-    <ClCompile Include="GameplayManager.cpp" />
-    <ClCompile Include="GameState.cpp" />
-    <ClCompile Include="Idle.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Metodyka.cpp" />
-    <ClCompile Include="Move.cpp" />
-    <ClCompile Include="PEiTC_lab.cpp" />
-    <ClCompile Include="Player.cpp" />
-    <ClCompile Include="PlayerFSM.cpp" />
-    <ClCompile Include="stdafx.cpp" />
-    <ClCompile Include="ToSecondLvl.cpp" />
-    <ClCompile Include="WDP.cpp" />
-    <ClCompile Include="Weekend.cpp" />
-    <ClCompile Include="WF.cpp" />
-    <ClCompile Include="Zagadnienia.cpp" />
-    <ClCompile Include="Elektro_egz.cpp" />
-    <ClCompile Include="Elektro_lab.cpp" />
-    <ClCompile Include="PEiTC_egz.cpp" />
-    <ClCompile Include="SSPK.cpp" />
+    <ClCompile Include="GameLevel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameplayManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Gameplay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLevelFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Beer.cpp">
+      <Filter>Source Files\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="Elektro_egz.cpp">
+      <Filter>Source Files\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="Elektro_lab.cpp">
+      <Filter>Source Files\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="Field.cpp">
+      <Filter>Source Files\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="Metodyka.cpp">
+      <Filter>Source Files\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="PEiTC_egz.cpp">
+      <Filter>Source Files\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="PEiTC_lab.cpp">
+      <Filter>Source Files\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="SSPK.cpp">
+      <Filter>Source Files\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="WDP.cpp">
+      <Filter>Source Files\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="Weekend.cpp">
+      <Filter>Source Files\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="WF.cpp">
+      <Filter>Source Files\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="Zagadnienia.cpp">
+      <Filter>Source Files\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="Active.cpp">
+      <Filter>Source Files\PlayerFSM</Filter>
+    </ClCompile>
+    <ClCompile Include="DiceRoll.cpp">
+      <Filter>Source Files\PlayerFSM</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercise.cpp">
+      <Filter>Source Files\PlayerFSM</Filter>
+    </ClCompile>
+    <ClCompile Include="Idle.cpp">
+      <Filter>Source Files\PlayerFSM</Filter>
+    </ClCompile>
+    <ClCompile Include="Move.cpp">
+      <Filter>Source Files\PlayerFSM</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerFSM.cpp">
+      <Filter>Source Files\PlayerFSM</Filter>
+    </ClCompile>
+    <ClCompile Include="ToSecondLvl.cpp">
+      <Filter>Source Files\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Active.h" />
-    <ClInclude Include="Beer.h" />
-    <ClInclude Include="classes.h" />
-    <ClInclude Include="DiceRoll.h" />
-    <ClInclude Include="Elektro_egz.h" />
-    <ClInclude Include="Elektro_lab.h" />
-    <ClInclude Include="Exercise.h" />
-    <ClInclude Include="Field.h" />
-    <ClInclude Include="FieldsHeaders.h" />
-    <ClInclude Include="GameLevel.h" />
-    <ClInclude Include="GameLevelFactory.h" />
-    <ClInclude Include="Gameplay.h" />
-    <ClInclude Include="GameplayManager.h" />
-    <ClInclude Include="GameState.h" />
-    <ClInclude Include="Idle.h" />
-    <ClInclude Include="LibsAndDeclarations.h" />
-    <ClInclude Include="Metodyka.h" />
-    <ClInclude Include="Move.h" />
-    <ClInclude Include="PEiTC_egz.h" />
-    <ClInclude Include="PEiTC_lab.h" />
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="PlayerFSM.h" />
-    <ClInclude Include="SSPK.h" />
-    <ClInclude Include="stdafx.h" />
-    <ClInclude Include="targetver.h" />
-    <ClInclude Include="WDP.h" />
-    <ClInclude Include="Weekend.h" />
-    <ClInclude Include="WF.h" />
-    <ClInclude Include="Zagadnienia.h" />
+    <ClInclude Include="GameLevel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLevelFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Gameplay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameplayManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="classes.h">
+      <Filter>Header Files\AdditionalHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="LibsAndDeclarations.h">
+      <Filter>Header Files\AdditionalHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldsHeaders.h">
+      <Filter>Header Files\AdditionalHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Beer.h">
+      <Filter>Header Files\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Field.h">
+      <Filter>Header Files\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Elektro_egz.h">
+      <Filter>Header Files\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Elektro_lab.h">
+      <Filter>Header Files\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Metodyka.h">
+      <Filter>Header Files\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="PEiTC_egz.h">
+      <Filter>Header Files\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="PEiTC_lab.h">
+      <Filter>Header Files\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="SSPK.h">
+      <Filter>Header Files\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="WDP.h">
+      <Filter>Header Files\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Weekend.h">
+      <Filter>Header Files\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="WF.h">
+      <Filter>Header Files\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Zagadnienia.h">
+      <Filter>Header Files\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Active.h">
+      <Filter>Header Files\PlayerFSM</Filter>
+    </ClInclude>
+    <ClInclude Include="DiceRoll.h">
+      <Filter>Header Files\PlayerFSM</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercise.h">
+      <Filter>Header Files\PlayerFSM</Filter>
+    </ClInclude>
+    <ClInclude Include="Idle.h">
+      <Filter>Header Files\PlayerFSM</Filter>
+    </ClInclude>
+    <ClInclude Include="Move.h">
+      <Filter>Header Files\PlayerFSM</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerFSM.h">
+      <Filter>Header Files\PlayerFSM</Filter>
+    </ClInclude>
+    <ClInclude Include="ToSecondLvl.h">
+      <Filter>Header Files\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -151,14 +263,10 @@
     <ClInclude Include="PlayerFSM.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
-    <ClInclude Include="ToSecondLvl.h" />
     <ClInclude Include="WDP.h" />
     <ClInclude Include="Weekend.h" />
     <ClInclude Include="WF.h" />
     <ClInclude Include="Zagadnienia.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="game_board.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
@@ -166,5 +274,37 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{267b905c-3c57-4c05-964f-673b31e14fd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources Files">
+      <UniqueIdentifier>{4b0d014a-b024-4b0f-8aad-b9806d11e48a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{37e0a9f5-a518-4d7a-acab-86914aa2340c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\AdditionalHeaders">
+      <UniqueIdentifier>{efa514be-224d-4cd8-9942-bdd3d35d145e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Fields">
+      <UniqueIdentifier>{8ce2de44-d815-4709-9be5-55788530034e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PlayerFSM">
+      <UniqueIdentifier>{b9aeb858-b0be-4e49-afbd-5bb2043259a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Fields">
+      <UniqueIdentifier>{539b4e53-14e3-40bd-9d49-0fbce1d4a5a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PlayerFSM">
+      <UniqueIdentifier>{052a257d-dd81-424c-9344-95c440ad5505}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="game_board.png">
+      <Filter>Resources Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

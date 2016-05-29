@@ -8,8 +8,11 @@ bool Gameplay::init()
 {
 	std::cout << "init" << std::endl;
 	players[0]->setActive();
-	for (auto p : players)
-		p->init();
+	//for (auto p : players)
+	//	p->init();
+	//for 2 players
+	players[0]->initialize("player.jpg");
+	players[1]->initialize("player2.jpg");
 	active_player = 0;
 	return true;
 }

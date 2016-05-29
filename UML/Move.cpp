@@ -9,7 +9,7 @@ void Move::init()
 
 PlayerFSM * Move::execute(Player & player)
 {
-	const GameLevel * level = player.getActualLvl();
+	GameLevel * level = player.getActualLvl();
 	int pixel_size = level->level_texture.getSize().x;
 	int size = level->getSize();
 	if (player.field >= size*(3. / 4.))

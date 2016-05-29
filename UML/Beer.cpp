@@ -4,7 +4,7 @@
 
 void Beer::setDescription()
 {
-	descriptionText.setString("Now you are drinking. Y meet new friedns(connections + 1) \n but in the next day you have hangover(hangover + 1");
+	descriptionText.setString("Jestes pijany. Poznales nowych znajomych,\nale jutro dopadnie Cie kac morderca!");
 }
 
 void Beer::perform(Player & player)

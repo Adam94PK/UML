@@ -44,16 +44,11 @@ void Player::initStatisticsText()
 	statisticsText.knowledge.setPosition(text_position);
 
 	statisticsText.name.setString(name);
-	statisticsText.connectoins.setString("Connections: " + to_string(stats.connections));
-	statisticsText.ects.setString("ECTSL: " + to_string(stats.ects));
-	statisticsText.flair.setString("Flair: " + to_string(stats.flair));
-	statisticsText.hangover.setString("Hangover: " + to_string(stats.hangover));
-	statisticsText.knowledge.setString("Knowladge: " + to_string(stats.knowledge));
-}
-
-void Player::updateStatisticsText()
-{
-	
+	statisticsText.connectoins.setString("Znajomosci: " + to_string(stats.connections));
+	statisticsText.ects.setString("ECTS: " + to_string(stats.ects));
+	statisticsText.flair.setString("Spryt: " + to_string(stats.flair));
+	statisticsText.hangover.setString("Kac: " + to_string(stats.hangover));
+	statisticsText.knowledge.setString("Wiedza: " + to_string(stats.knowledge));
 }
 
 void Player::drawStatistics(sf::RenderWindow & window)
@@ -112,6 +107,22 @@ bool Player::init()
 	}
 	graphics.sprite.setTexture(graphics.texture);
 	initStatisticsText();
+	position.x = 760;
+	position.y = 760;
+	return true;
+}
+
+bool Player::initialize(const std::string &textur)
+{
+	if (!graphics.texture.loadFromFile(textur))
+	{
+		std::cout << "Nie udalo sie zaladowac textury" << std::endl;
+		return false;
+	}
+	graphics.sprite.setTexture(graphics.texture);
+	initStatisticsText();
+	position.x = 760;
+	position.y = 760;
 	return true;
 }
 
@@ -197,5 +208,6 @@ bool Player::addEcts(int pts)
 bool Player::setLevel(GameLevel * gameLvl)
 {
 	actual_level = gameLvl;
+	field = 18;
 	return true;
 }

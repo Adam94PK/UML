@@ -3,7 +3,7 @@
 
 void Field::setDescription()
 {
-	descriptionText.setString("This field do nothing \n Yes, nothing");
+	descriptionText.setString("Na tym polu sie nic nie dzieje.");
 }
 
 void Field::init()

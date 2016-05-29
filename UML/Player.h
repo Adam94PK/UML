@@ -61,7 +61,6 @@ class Player
 	sf::Font font;
 	//////////////////////////////////
 	void initStatisticsText();
-	void updateStatisticsText();
 	//////////////////////////////////
 public:
 	Player(std::string name);
@@ -72,6 +71,7 @@ public:
 	statistics stats;
 	void swap(Player &player);
 	bool init();
+	bool initialize(const std::string &);
 	bool update(float dt);
 	bool draw(sf::RenderWindow & window);
 	void drawStatistics(sf::RenderWindow & window);
