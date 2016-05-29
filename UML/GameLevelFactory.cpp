@@ -93,6 +93,14 @@ GameLevel GameLevelFactory::getLvl_1()
 		{
 			makeField(new Boyfriend(), gameLvl);
 		}
+		else if (i == 31)
+		{
+			makeField(new KNIT(), gameLvl);
+		}
+		else if (i == 33)
+		{
+			makeField(new Analiza(), gameLvl);
+		}
 		else
 		{
 			gameLvl.fields.emplace_back(make_shared<Field>());

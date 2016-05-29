@@ -103,6 +103,12 @@
     <ClCompile Include="Boyfriend.cpp">
       <Filter>Source Files\Fields</Filter>
     </ClCompile>
+    <ClCompile Include="Analiza.cpp">
+      <Filter>Source Files\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="KNIT.cpp">
+      <Filter>Source Files\Fields</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameLevel.h">
@@ -216,6 +222,12 @@
     <ClInclude Include="Boyfriend.h">
       <Filter>Header Files\Fields</Filter>
     </ClInclude>
+    <ClInclude Include="KNIT.h">
+      <Filter>Header Files\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Analiza.h">
+      <Filter>Header Files\Fields</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -313,6 +325,7 @@
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
     <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram11.cd" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />

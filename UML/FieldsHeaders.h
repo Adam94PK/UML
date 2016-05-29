@@ -18,3 +18,5 @@
 #include "Laptop.h"
 #include "Fizyka.h"
 #include "Boyfriend.h"
+#include "KNIT.h"
+#include "Analiza.h"

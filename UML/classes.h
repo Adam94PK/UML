@@ -6,6 +6,8 @@ class WDP;
 class Zagadnienia;
 class ToSecondLvl;
 class Metodyka;
+class KNIT;
+class Analiza;
 //
 class Gameplay;
 class GameState;
