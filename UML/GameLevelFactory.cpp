@@ -63,9 +63,35 @@ GameLevel GameLevelFactory::getLvl_1()
 		}
 		else if (i == 18)
 		{
-			shared_ptr<Field> pointer(new ToSecondLvl());
-			pointer->init();
-			gameLvl.fields.push_back(pointer);
+			makeField(new ToSecondLvl(), gameLvl);
+		}
+		else if (i == 20)
+		{
+			makeField(new Met_progr_egz(), gameLvl);
+		}
+		else if (i == 23)
+		{
+			makeField(new Rajd(), gameLvl);
+		}
+		else if (i == 24)
+		{
+			makeField(new Met_progr_lab(), gameLvl);
+		}
+		else if (i == 26)
+		{
+			makeField(new Dyskretna(), gameLvl);
+		}
+		else if (i == 27)
+		{
+			makeField(new Laptop(), gameLvl);
+		}
+		else if (i == 28)
+		{
+			makeField(new Fizyka(), gameLvl);
+		}
+		else if (i == 29)
+		{
+			makeField(new Boyfriend(), gameLvl);
 		}
 		else
 		{
