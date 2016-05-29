@@ -8,7 +8,7 @@ void Field::setDescription()
 
 void Field::init()
 {
-	if (!font.loadFromFile("resources/sansation1.ttf"))
+	if (!font.loadFromFile("resources/arial.ttf"))
 	{
 		std::cout << "nie udalo sie zaladowac fonta" << std::endl;
 	}

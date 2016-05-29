@@ -6,8 +6,8 @@
 
 int main()
 {
-	static const int game_width = 1680;
-	static const int game_height = 900;
+	static const int game_width = 1300;
+	static const int game_height = 800;
 
 	sf::RenderWindow window(sf::VideoMode(game_width, game_height, 32), "PK-GAME", sf::Style::Titlebar | sf::Style::Close);
 	window.setVerticalSyncEnabled(true);

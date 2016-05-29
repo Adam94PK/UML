@@ -99,6 +99,21 @@
     <ClInclude Include="Zagadnienia.h">
       <Filter>Header Files\Fields</Filter>
     </ClInclude>
+    <ClInclude Include="Metodyka.h">
+      <Filter>Header Files\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Weekend.h">
+      <Filter>Header Files\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldsHeaders.h">
+      <Filter>Header Files\AdditionalHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="WF.h">
+      <Filter>Header Files\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="PEiTC_lab.h">
+      <Filter>Header Files\Fields</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -153,6 +168,18 @@
       <Filter>Source Files\PlayerFSM</Filter>
     </ClCompile>
     <ClCompile Include="Zagadnienia.cpp">
+      <Filter>Source Files\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="Metodyka.cpp">
+      <Filter>Source Files\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="Weekend.cpp">
+      <Filter>Source Files\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="WF.cpp">
+      <Filter>Source Files\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="PEiTC_lab.cpp">
       <Filter>Source Files\Fields</Filter>
     </ClCompile>
   </ItemGroup>
