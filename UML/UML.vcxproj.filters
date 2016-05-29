@@ -96,6 +96,9 @@
     <ClInclude Include="Exercise.h">
       <Filter>Header Files\PlayerFSM</Filter>
     </ClInclude>
+    <ClInclude Include="Zagadnienia.h">
+      <Filter>Header Files\Fields</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -148,6 +151,9 @@
     </ClCompile>
     <ClCompile Include="Exercise.cpp">
       <Filter>Source Files\PlayerFSM</Filter>
+    </ClCompile>
+    <ClCompile Include="Zagadnienia.cpp">
+      <Filter>Source Files\Fields</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

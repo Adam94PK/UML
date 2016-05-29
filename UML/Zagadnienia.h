@@ -2,10 +2,10 @@
 #include "LibsAndDeclarations.h"
 #include "Field.h"
 
-class Beer : public Field
+class Zagadnienia : public Field
 {
 	void setDescription();
 public:
-	void perform(Player &player);
+	void perform(Player & player);
 };
 

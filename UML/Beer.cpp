@@ -7,9 +7,8 @@ void Beer::setDescription()
 	descriptionText.setString("Now you are drinking. Y meet new friedns(connections + 1) \n but in the next day you have hangover(hangover + 1");
 }
 
-void Beer::perfomr(Player & player)
+void Beer::perform(Player & player)
 {
-	player.stats.connections += 1;
-	player.stats.hangover += 1;
-	std::cout << player.stats.connections << std::endl;
+	player.addConnectoins(2);
+	player.addHangover(2);
 }

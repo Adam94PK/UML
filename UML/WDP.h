@@ -6,6 +6,6 @@ class WDP : public Field
 {
 	void setDescription();
 public:
-
+	void perform(Player & player);
 };
 

@@ -3,6 +3,7 @@ class Player;
 class Field;
 class Beer;
 class WDP;
+class Zagadnienia;
 class Gameplay;
 class GameState;
 class PlayerFSM;

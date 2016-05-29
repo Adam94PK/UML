@@ -33,6 +33,7 @@ class Player
 	};
 	struct text
 	{
+		sf::Text name;
 		sf::Text hangover;
 		sf::Text knowledge;
 		sf::Text flair;
@@ -79,4 +80,9 @@ public:
 	GameLevel * getActualLvl();
 	void setLvl(GameLevel & game_lvl);
 	int getActualField();
+	bool addHangover(int pts);
+	bool addKnowledge(int pts);
+	bool addFlair(int pts);
+	bool addConnectoins(int pts);
+	bool addEcts(int pts);
 };

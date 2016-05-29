@@ -7,4 +7,5 @@ class GameplayManager
 	static Gameplay * gameplay;
 public:
 	static Gameplay * get();
+	static bool release();
 };
