@@ -4,6 +4,8 @@
 
 class Exercise : public PlayerFSM
 {
+	bool pressed;
+	bool executed;
 public:
 	void init();
 	PlayerFSM * execute(Player & player);
