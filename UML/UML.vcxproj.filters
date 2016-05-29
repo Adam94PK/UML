@@ -114,6 +114,18 @@
     <ClInclude Include="PEiTC_lab.h">
       <Filter>Header Files\Fields</Filter>
     </ClInclude>
+    <ClInclude Include="SSPK.h">
+      <Filter>Header Files\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="PEiTC_egz.h">
+      <Filter>Header Files\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Elektro_lab.h">
+      <Filter>Header Files\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Elektro_egz.h">
+      <Filter>Header Files\Fields</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -180,6 +192,18 @@
       <Filter>Source Files\Fields</Filter>
     </ClCompile>
     <ClCompile Include="PEiTC_lab.cpp">
+      <Filter>Source Files\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="SSPK.cpp">
+      <Filter>Source Files\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="PEiTC_egz.cpp">
+      <Filter>Source Files\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="Elektro_lab.cpp">
+      <Filter>Source Files\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="Elektro_egz.cpp">
       <Filter>Source Files\Fields</Filter>
     </ClCompile>
   </ItemGroup>

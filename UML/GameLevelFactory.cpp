@@ -3,6 +3,13 @@
 #include "GameLevel.h"
 #include "FieldsHeaders.h"
 
+inline void GameLevelFactory::makeField(Field *whichField, GameLevel &gamelvl)
+{
+	shared_ptr<Field> pointer(whichField);
+	pointer->init();
+	gamelvl.fields.push_back(pointer);
+}
+
 GameLevel GameLevelFactory::getLvl_1()
 {
 	GameLevel gameLvl;
@@ -12,45 +19,47 @@ GameLevel GameLevelFactory::getLvl_1()
 	{
 		if (i == 2 || i == 34)
 		{
-			shared_ptr<Field> pointer(new Beer());
-			pointer->init();
-			gameLvl.fields.push_back(pointer);
+			makeField(new Beer(), gameLvl);
 		}
 		else if (i == 3)
 		{
-			shared_ptr<Field> pointer(new WDP());
-			pointer->init();
-			gameLvl.fields.push_back(pointer);
+			makeField(new WDP(), gameLvl);
 		}
 		else if (i == 6)
 		{
-			shared_ptr<Field> pointer(new Zagadnienia());
-			pointer->init();
-			gameLvl.fields.push_back(pointer);
+			makeField(new Zagadnienia(), gameLvl);
 		}
 		else if (i == 7)
 		{
-			shared_ptr<Field> pointer(new Metodyka());
-			pointer->init();
-			gameLvl.fields.push_back(pointer);
+			makeField(new Metodyka(), gameLvl);
 		}
 		else if (i == 8)
 		{
-			shared_ptr<Field> pointer(new Weekend());
-			pointer->init();
-			gameLvl.fields.push_back(pointer);
+			makeField(new Weekend(), gameLvl);
 		}
 		else if (i == 9)
 		{
-			shared_ptr<Field> pointer(new WF());
-			pointer->init();
-			gameLvl.fields.push_back(pointer);
+			makeField(new WF(), gameLvl);
 		}
 		else if (i == 10)
 		{
-			shared_ptr<Field> pointer(new PEiTC_lab());
-			pointer->init();
-			gameLvl.fields.push_back(pointer);
+			makeField(new PEiTC_lab(), gameLvl);
+		}
+		else if (i == 12)
+		{
+			makeField(new SSPK(), gameLvl);
+		}
+		else if (i == 13)
+		{
+			makeField(new PEiTC_egz(), gameLvl);
+		}
+		else if (i == 15)
+		{
+			makeField(new Elektro_lab(), gameLvl);
+		}
+		else if (i == 16)
+		{
+			makeField(new Elektro_egz(), gameLvl);
 		}
 		else
 		{

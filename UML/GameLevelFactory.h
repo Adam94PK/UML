@@ -3,6 +3,8 @@
 
 class GameLevelFactory
 {
+	inline static void makeField(Field *whichField, GameLevel &gamelvl);
+
 public:
 	static const int LEVEL_1_SIZE = 36;
 	static const int LEVEL_2_SIZE = 28;

@@ -155,6 +155,8 @@
     <ClInclude Include="Beer.h" />
     <ClInclude Include="classes.h" />
     <ClInclude Include="DiceRoll.h" />
+    <ClInclude Include="Elektro_egz.h" />
+    <ClInclude Include="Elektro_lab.h" />
     <ClInclude Include="Exercise.h" />
     <ClInclude Include="Field.h" />
     <ClInclude Include="FieldsHeaders.h" />
@@ -167,9 +169,11 @@
     <ClInclude Include="LibsAndDeclarations.h" />
     <ClInclude Include="Metodyka.h" />
     <ClInclude Include="Move.h" />
+    <ClInclude Include="PEiTC_egz.h" />
     <ClInclude Include="PEiTC_lab.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="PlayerFSM.h" />
+    <ClInclude Include="SSPK.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="WDP.h" />
@@ -181,6 +185,8 @@
     <ClCompile Include="Active.cpp" />
     <ClCompile Include="Beer.cpp" />
     <ClCompile Include="DiceRoll.cpp" />
+    <ClCompile Include="Elektro_egz.cpp" />
+    <ClCompile Include="Elektro_lab.cpp" />
     <ClCompile Include="Exercise.cpp" />
     <ClCompile Include="Field.cpp" />
     <ClCompile Include="GameLevel.cpp" />
@@ -192,9 +198,11 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Metodyka.cpp" />
     <ClCompile Include="Move.cpp" />
+    <ClCompile Include="PEiTC_egz.cpp" />
     <ClCompile Include="PEiTC_lab.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="PlayerFSM.cpp" />
+    <ClCompile Include="SSPK.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
