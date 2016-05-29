@@ -4,6 +4,7 @@ class Field;
 class Beer;
 class WDP;
 class Zagadnienia;
+class ToSecondLvl;
 class Gameplay;
 class GameState;
 class PlayerFSM;

@@ -50,7 +50,6 @@ class Player
 
 	////////////////////////////////////
 	std::string name;
-	statistics stats;
 	int field;
 	graphics graphics;
 	states available_states;
@@ -70,6 +69,7 @@ public:
 	Player(const Player &&player);
 	~Player();
 	std::string getName();
+	statistics stats;
 	void swap(Player &player);
 	bool init();
 	bool update(float dt);
@@ -85,4 +85,5 @@ public:
 	bool addFlair(int pts);
 	bool addConnectoins(int pts);
 	bool addEcts(int pts);
+	bool setLevel(GameLevel * gameLvl);
 };
