@@ -16,6 +16,7 @@ bool Gameplay::init()
 
 bool Gameplay::init(int players_count, std::string * names)
 {
+	this->players_conut = players_count;
 	players.reserve(players_count);
 	for (int i = 0; i < players_count; i++)
 		players.emplace_back(make_shared<Player>(names[i]));
@@ -51,4 +52,11 @@ bool Gameplay::draw(sf::RenderWindow & window)
 
 void Gameplay::relase()
 {
+}
+
+void Gameplay::setNextActive()
+{
+	active_player += 1;
+	active_player %= players_conut;
+	players[active_player]->setActive();
 }

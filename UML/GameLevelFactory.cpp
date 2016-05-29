@@ -3,6 +3,7 @@
 #include "GameLevel.h"
 #include "Beer.h"
 #include "WDP.h"
+#include "Zagadnienia.h"
 
 GameLevel GameLevelFactory::getLvl_1()
 {
@@ -11,7 +12,7 @@ GameLevel GameLevelFactory::getLvl_1()
 	gameLvl.size = LEVEL_1_SIZE;
 	for (int i = 0; i < LEVEL_1_SIZE; i++)
 	{
-		if (i == 2)
+		if (i == 2 || i == 34)
 		{
 			shared_ptr<Field> pointer(new Beer());
 			pointer->init();
@@ -20,6 +21,12 @@ GameLevel GameLevelFactory::getLvl_1()
 		else if (i == 3)
 		{
 			shared_ptr<Field> pointer(new WDP());
+			pointer->init();
+			gameLvl.fields.push_back(pointer);
+		}
+		else if (i == 6)
+		{
+			shared_ptr<Field> pointer(new Zagadnienia());
 			pointer->init();
 			gameLvl.fields.push_back(pointer);
 		}
